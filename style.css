@@ -1,0 +1,606 @@
+@font-face {
+    font-family: Arthemis;
+    src: url('Arthemis-PKY27.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('Nunito-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url('Oswald-ymXe.ttf') format('truetype');
+}
+
+body {
+    font-family: Nunito;
+}
+
+/* navbar */
+.navbar-brand-font {
+    font-family: Arthemis, arial;
+    height: 37px;
+}
+
+.navbar-item {
+    font-size: 16px;
+}
+
+.active-nav {
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    color: white !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-weight: bold !important;
+}
+
+.navbar-login {
+    margin-right: -20px;
+}
+
+.navbar-register {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.color-nav {
+    color: white;
+    font-weight: lighter;
+}
+
+.transition-nav {
+    transition: .3s;
+}
+
+nav.sticky {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .4));
+    margin-top: -15px;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.3);
+}
+
+/* end of navbar */
+
+/* banner */
+.title-font {
+    font-family: Oswald;
+}
+
+.banner1 {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(255, 255, 255, 0)), url(image/banner/padarIsland1-NTT.jpg);
+    /* background: linear-gradient(rgba(0, 0, 0, .4), rgba(255, 255, 255, 0)), url(image/banner/PadarIsland-ntt.jpg); */
+    background-size: cover;
+    background-position: center;
+    transition: .8s;
+}
+
+.banner2 {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(255, 255, 255, 0)), url(image/banner/gunung-bromo-jatim.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .8s;
+}
+
+.banner3 {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(255, 255, 255, 0)), url(image/banner/kelingking-beach.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .8s;
+}
+
+.caption-banner {
+    padding-bottom: 40vh;
+}
+
+.caption-banner h1 {
+    font-size: 60px;
+}
+
+.caption-banner p {
+    font-size: 20px;
+}
+
+.carousel-form {
+    border-radius: 20px;
+}
+
+.carousel-button {
+    border-radius: 20px;
+
+}
+
+/* end of banner */
+
+/* destinasi populer */
+.destinasi-image1,
+.destinasi-image2 {
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.destinasi-image3,
+.destinasi-image4,
+.destinasi-image5 {
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+.destinasi-image1 {
+    background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
+}
+
+.destinasi-image2 {
+    background-image: url(image/destinasi-populer/candi-borobudur-magelang.jpg);
+}
+
+.destinasi-image3 {
+    background-image: url(image/destinasi-populer/Kelimutu-volcano.jpg);
+}
+
+.destinasi-image4 {
+    background-image: url(image/destinasi-populer/pulau-padar.jpg);
+}
+
+.destinasi-image5 {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(image/destinasi-populer/diamond-beach-nusapenida.jpg);
+}
+
+.destinasi-font-title {
+    font-family: Arthemis, Arial;
+}
+
+.destinasi-margin-title {
+    margin-top: -10px;
+}
+
+.destinasi-image2:hover,
+.destinasi-image3:hover,
+.destinasi-image4:hover,
+.destinasi-image5:hover {
+    transform: scale(1.1);
+
+}
+
+.destinasi-image1:hover {
+    transform: scale(1.05) !important;
+}
+
+.destinasi-button {
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* promo */
+.promo-bg {
+    background-color: white;
+}
+
+.promo-title {
+    color: black;
+}
+
+.promo-button {
+    color: #8c8c8c;
+    border: none;
+}
+
+.promo-active {
+    background-color: #3488ce !important;
+    color: white;
+}
+
+.promo-active:hover {
+    color: white;
+}
+
+.promo {
+    transition: .5s;
+}
+
+.promo:hover {
+    transform: scale(1.1) !important;
+}
+
+.linethrough {
+    text-decoration: line-through red;
+
+}
+
+.image-diskon {
+    padding: 0px;
+}
+
+.diskon-title,
+.price-after-diskon {
+    font-weight: bold;
+    color: #3488ce;
+
+}
+
+.diskon-title {
+    margin-top: -5px;
+    margin-bottom: -1px;
+}
+
+/* kenpa kami */
+.kenapa-kami-container {
+    background-color: black;
+}
+
+.icon-whyUs {
+    width: 90px;
+    height: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.kenapa-image {
+    height: 550px;
+    background-image: url(tari-kecak-bali.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+/* modal */
+.destinasi-decoration {
+    text-decoration: none;
+}
+
+.modal-padding {
+    padding: 0px;
+}
+
+
+.modal-image {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+.modal-lokasi {
+    margin-top: -20px;
+    font-size: 13px;
+    color: rgb(83, 81, 81);
+}
+
+.modal-text {
+    text-align: justify;
+}
+
+/* apa kata mereka */
+
+.line {
+    max-width: 400px;
+
+}
+
+.testimoni-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(163, 162, 162);
+    overflow: hidden;
+}
+
+.testimoni-profil-name {
+    margin-bottom: -3px;
+}
+
+.testimoni-job {
+    color: rgb(163, 162, 162);
+}
+
+.testimoni-text {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* hubungi kami */
+.ikuti-icon-size {
+    font-size: 30px;
+}
+
+@media (min-width: 1200px) {
+
+    /* kenapa kami */
+    .block-kenapa2 {
+        margin-left: 70px
+    }
+
+    .block-kenapa3 {
+        margin-left: 420px !important;
+        margin-top: -50px !important;
+    }
+
+    /* end of kenapa kami */
+
+
+}
+
+@media (min-width: 992px) {
+
+    /* navbar */
+    .navbar-home {
+        padding-left: 35px !important;
+    }
+
+    .navbar-jarak {
+        margin-right: -20px !important;
+    }
+
+    .navbar-register {
+        margin: 0 48px;
+    }
+
+    /* baner */
+    .caption-banner h1 {
+        font-size: 60px !important;
+    }
+
+    .caption-banner p,
+    .caption-banner button {
+        font-size: 20px !important;
+    }
+
+
+    /* kenapa kami */
+    .kenapa-kami,
+    .kenapa-kami2 {
+        margin-top: 100px;
+    }
+
+    .block-kenapa2 {
+        margin-left: 70px
+    }
+
+    .block-kenapa3 {
+        margin-left: 355px;
+        margin-top: -130px;
+    }
+
+    .content-kenapa-kami {
+        flex-direction: row !important;
+    }
+
+    .kenapa1 {
+        order: 1 !important;
+    }
+
+    .kenapa2 {
+        order: 2 !important;
+    }
+
+    .kenapa3 {
+        order: 3 !important;
+    }
+
+    /* end of kenapa kami */
+
+    /* destinasi pop Up */
+    .modal-image {
+        border-radius: 7px 0 0 7px !important;
+    }
+
+    .modal-title {
+        padding-left: 23px !important;
+    }
+
+    .modal-lokasi {
+        padding-left: 25px !important;
+    }
+
+    .modal-text {
+        padding-left: 0PX !important;
+    }
+
+    .modal-button {
+        margin-top: 0px !important;
+    }
+
+    /* apa kata mereka */
+    .testimoni-text {
+        padding: 0px !important;
+        padding-right: 30px !important;
+        margin-top: 0 !important;
+    }
+
+    .social {
+        padding-left: 0px !important;
+        text-align: start !important;
+
+    }
+
+    .testimoni-block-satu {
+        border-radius: 10px 0 0 10px !important;
+    }
+
+    .testimoni-block-dua {
+        border-radius: 0 10px 10px 0 !important;
+    }
+}
+
+
+
+
+@media (min-width: 768px) {}
+
+@media (min-width: 576px) {
+
+    /* navbar */
+    .active-nav {
+        width: 80px;
+        margin-left: 30px;
+    }
+
+    .navbar-responsif {
+        margin-left: 50px;
+    }
+
+    .navbar-register {
+        margin-left: 38px;
+    }
+
+    /* baner */
+    .caption-banner h1 {
+        font-size: 40px;
+    }
+
+    .caption-banner p,
+    .caption-banner button {
+        font-size: 17px;
+    }
+
+    /* kenapa kami */
+    .content-kenapa-kami {
+        flex-direction: column;
+    }
+
+    .kenapa1 {
+        order: 3;
+    }
+
+    .kenapa2 {
+        order: 1;
+    }
+
+    .kenapa3 {
+        order: 2;
+    }
+
+    /* end of kenapa kami */
+
+    /* destinasi pop Up */
+    .modal-image {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .modal-title {
+        padding-left: 45px;
+    }
+
+    .modal-lokasi {
+        padding-left: 45px;
+    }
+
+    .modal-text {
+        padding-left: 20px;
+        padding-right: 20PX;
+    }
+
+    .modal-button {
+        margin-top: -400px;
+    }
+
+    /* apa kata mereka */
+    .testimoni-text {
+        margin-top: -50px;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    .testimoni-block-satu {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .testimoni-block-dua {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+
+    /* navbar */
+    .active-nav {
+        width: 80px;
+        margin-left: 30px;
+    }
+
+    .navbar-responsif {
+        margin-left: 50px;
+    }
+
+    .navbar-register {
+        margin-left: 38px !important;
+    }
+
+    /* baner */
+    .caption-banner h1 {
+        font-size: 30px;
+    }
+
+    .caption-banner p,
+    .caption-banner button {
+        font-size: 15px;
+    }
+
+    /* kenapa kami */
+    .content-kenapa-kami {
+        flex-direction: column;
+    }
+
+    .kenapa1 {
+        order: 3;
+    }
+
+    .kenapa2 {
+        order: 1;
+    }
+
+    .kenapa3 {
+        order: 2;
+    }
+
+    /* destinasi populer */
+    .modal-title {
+        padding: 20px 0 0 25px;
+    }
+
+    .modal-lokasi {
+        padding: 0 0 0 25px
+    }
+
+    /* destinasi pop up */
+    .modal-image {
+        border-radius: 7px 7px 0 0;
+    }
+
+    /* apa kata mereka */
+    .testimoni-text {
+        padding: 0 20px;
+        margin-top: -50px;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    .testimoni-block-satu {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .testimoni-block-dua {
+        border-radius: 0 0 10px 10px;
+    }
+
+    /* hubungi kami */
+    .hubungi-kami-alamat {
+        margin-top: 20px;
+    }
+}
