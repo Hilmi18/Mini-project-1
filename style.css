@@ -1,16 +1,16 @@
 @font-face {
     font-family: Arthemis;
-    src: url('Arthemis-PKY27.ttf') format('truetype');
+    src: url('font/Arthemis-PKY27.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Nunito;
-    src: url('Nunito-VariableFont_wght.ttf') format('truetype');
+    src: url('font/Nunito-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: Oswald;
-    src: url('Oswald-ymXe.ttf') format('truetype');
+    src: url('font/Oswald-ymXe.ttf') format('truetype');
 }
 
 body {
@@ -21,14 +21,20 @@ body {
 .navbar-brand-font {
     font-family: Arthemis, arial;
     height: 37px;
+    color: rgb(255, 145, 0);
 }
 
 .navbar-item {
     font-size: 16px;
 }
 
+.navbar-item a:hover {
+    color: rgb(255, 145, 0);
+    transition: .5s;
+}
+
 .active-nav {
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgb(255, 145, 0, .5);
     border-radius: 20px;
     color: white !important;
     padding-left: 20px !important;
@@ -36,13 +42,35 @@ body {
     font-weight: bold !important;
 }
 
+.active-nav:hover {
+    color: white !important;
+}
+
 .navbar-login {
     margin-right: -20px;
+}
+
+.navbar-toSign {
+    font-size: 13px;
+}
+
+.navbar-toSign a {
+    color: rgb(255, 145, 0);
 }
 
 .navbar-register {
     padding-top: 3px;
     padding-bottom: 3px;
+    border-color: rgb(255, 145, 0);
+    transition: .5s;
+}
+
+.navbar-register:hover {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-color: rgb(255, 145, 0);
+    background-color: rgb(255, 145, 0);
+    color: white;
 }
 
 .color-nav {
@@ -58,6 +86,10 @@ nav.sticky {
     background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .4));
     margin-top: -15px;
     border-bottom: 1px solid rgba(231, 231, 231, 0.3);
+}
+
+.signIn-alert {
+    margin-bottom: -10px !important;
 }
 
 /* end of navbar */
@@ -113,7 +145,115 @@ nav.sticky {
 
 }
 
+.btn-banner {
+    border-color: rgb(255, 145, 0);
+    transition: .5s;
+}
+
+.btn-banner:hover {
+    border-color: rgb(255, 145, 0);
+    background-color: rgb(255, 145, 0);
+    color: white;
+}
+
 /* end of banner */
+
+/* promo */
+.promo-bg {
+    background-color: white;
+}
+
+.promo-title {
+    color: black;
+}
+
+.promo-button {
+    color: #8c8c8c;
+    border: none;
+}
+
+.button-promo-selengkapnya {
+    border-color: #3488ce;
+    color: #3488ce;
+}
+
+.button-promo-selengkapnya:hover {
+    border-color: #3488ce;
+    color: #3488ce;
+}
+
+.promo-active,
+.button-tema-color {
+    background-color: rgb(255, 145, 0);
+    /* background-color: #3488ce !important; */
+    color: white;
+    border-color: rgb(255, 145, 0);
+}
+
+.promo-active:hover {
+    background-color: rgb(216, 124, 3);
+    color: white;
+}
+
+.promo {
+    transition: .5s;
+}
+
+.promo:hover {
+    transform: scale(1.1) !important;
+}
+
+.linethrough {
+    text-decoration: line-through red;
+    font-size: 13px;
+}
+
+.image-diskon {
+    padding: 0px;
+}
+
+.diskon-title,
+.price-after-diskon {
+    font-weight: bold;
+    /* color: #3488ce; */
+    color: rgb(255, 145, 0);
+
+}
+
+.price-after-diskon {
+    font-size: 25px;
+    margin: -20px 0 0 -2px;
+}
+
+.diskon-title {
+    margin-top: -5px;
+    margin-bottom: -1px;
+    color: black;
+}
+
+.harus-diisi {
+    color: red;
+}
+
+/* kenpa kami */
+.kenapa-kami-container {
+    background-color: black;
+}
+
+.icon-whyUs {
+    width: 90px;
+    height: 90px;
+    border: 2px solid rgb(255, 145, 0);
+    border-radius: 50%;
+}
+
+.kenapa-image {
+    height: 550px;
+    background-image: url(image/kenapa-kami/tari-kecak-bali.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
 
 /* destinasi populer */
 .destinasi-image1,
@@ -166,10 +306,7 @@ nav.sticky {
     margin-top: -10px;
 }
 
-.destinasi-image2:hover,
-.destinasi-image3:hover,
-.destinasi-image4:hover,
-.destinasi-image5:hover {
+.hover-image:hover {
     transform: scale(1.1);
 
 }
@@ -181,79 +318,16 @@ nav.sticky {
 .destinasi-button {
     width: 200px;
     border-radius: 20px;
-}
-
-/* promo */
-.promo-bg {
-    background-color: white;
-}
-
-.promo-title {
-    color: black;
-}
-
-.promo-button {
-    color: #8c8c8c;
-    border: none;
-}
-
-.promo-active {
-    background-color: #3488ce !important;
-    color: white;
-}
-
-.promo-active:hover {
-    color: white;
-}
-
-.promo {
+    border-color: rgb(255, 145, 0);
     transition: .5s;
 }
 
-.promo:hover {
-    transform: scale(1.1) !important;
+.destinasi-button:hover {
+    border-color: rgb(255, 145, 0);
+    background-color: rgb(255, 145, 0);
+    color: white;
 }
 
-.linethrough {
-    text-decoration: line-through red;
-
-}
-
-.image-diskon {
-    padding: 0px;
-}
-
-.diskon-title,
-.price-after-diskon {
-    font-weight: bold;
-    color: #3488ce;
-
-}
-
-.diskon-title {
-    margin-top: -5px;
-    margin-bottom: -1px;
-}
-
-/* kenpa kami */
-.kenapa-kami-container {
-    background-color: black;
-}
-
-.icon-whyUs {
-    width: 90px;
-    height: 90px;
-    border: 2px solid white;
-    border-radius: 50%;
-}
-
-.kenapa-image {
-    height: 550px;
-    background-image: url(tari-kecak-bali.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-}
 
 /* modal */
 .destinasi-decoration {
@@ -292,7 +366,8 @@ nav.sticky {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 5px solid rgb(163, 162, 162);
+    /* border: 5px solid rgb(163, 162, 162); */
+    border: 4px solid rgb(255, 145, 0);
     overflow: hidden;
 }
 
@@ -314,8 +389,320 @@ nav.sticky {
     font-size: 30px;
 }
 
+/* --------------------------- Promo page --------------------------- */
+.active-nav2 {
+    background-color: rgb(255, 145, 0, .5);
+    border-radius: 20px;
+    color: white !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-weight: bold !important;
+}
+
+.breadcrumb-color {
+    color: rgb(255, 145, 0) !important;
+}
+
+.banner-promo {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(image/banner/gunung-bromo-jatim.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.list-promo {
+    border-left: 5px solid rgb(180, 177, 177);
+}
+
+.list-promo-active {
+    border-left: 5px solid black !important;
+    margin-left: -5px;
+}
+
+.button-promo-list {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+
+.promo-label {
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    background-color: red;
+    font-weight: bold;
+}
+
+.promo-lokasi {
+    /* margin-top: -20px; */
+    font-size: 13px;
+    color: rgb(83, 81, 81);
+}
+
+/* --------------------------- End Promo page --------------------------- */
+
+
+/* --------------------------- Destinasi page --------------------------- */
+
+.banner-destinasi {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(image/banner/kelingking-beach-destinasi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* explore indonesia by region */
+
+
+.explore-image1 {
+    background-image: url(image/destinasi-populer/candi-borobudur-magelang.jpg);
+}
+
+.explore-image2 {
+    background-image: url(image/destinasi-populer/destinasi/bali-region.jpg);
+
+}
+
+.explore-image3 {
+    background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
+}
+
+.explore-image4 {
+    background-image: url(image/destinasi-populer/destinasi/pulau-derawan.jpg);
+}
+
+.explore-image5 {
+    background-image: url(image/destinasi-populer/destinasi/bunaken.jpg);
+}
+
+.explore-image6 {
+    background-image: url(image/destinasi-populer/destinasi/danau-toba.jpg);
+}
+
+
+/* destinasi populer */
+
+.destinasi-page-image {
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+.destinasi-image-1 {
+    background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
+}
+
+.destinasi-image-5 {
+    background-image: url(image/destinasi-populer/diamond-beach-nusapenida.jpg);
+}
+
+.destinasi-image6 {
+    background-image: url(image/destinasi-populer/destinasi/pulau-weh.jpg);
+}
+
+
+/* destinasi jawa */
+.banner-destinasi-jawa {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(image/banner/kawah-ijen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destinasi-jawa-1 {
+    background-image: url(image/destinasi-populer/destinasi/gunung-prau.jpg);
+}
+
+.destinasi-jawa-2 {
+    background-image: url(image/destinasi-populer/destinasi/candi-borobudur-magelang.jpg);
+}
+
+.destinasi-jawa-3 {
+    background-image: url(image/destinasi-populer/destinasi/gunung-bromo-jatim.jpg);
+}
+
+.destinasi-jawa-4 {
+    background-image: url(image/destinasi-populer/destinasi/taman-nasional-baluran.jpg);
+}
+
+.destinasi-jawa-5 {
+    background-image: url(image/destinasi-populer/destinasi/sikunir-jateng.jpg);
+}
+
+.destinasi-jawa-6 {
+    background-image: url(image/destinasi-populer/destinasi/kawah-ijen-jatim.jpg);
+}
+
+/* destinasi bali-nusa tenggara */
+.banner-destinasi-bali {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(image/banner/Kelimutu-volcano.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destinasi-bali-1 {
+    background-image: url(image/destinasi-populer/diamond-beach-nusapenida.jpg);
+}
+
+.destinasi-bali-2 {
+    background-image: url(image/destinasi-populer/Kelimutu-volcano.jpg);
+}
+
+.destinasi-bali-3 {
+    background-image: url(image/destinasi-populer/destinasi/Pantai-Kelingking-NusaPenida.jpg);
+}
+
+.destinasi-bali-4 {
+
+    background-image: url(image/destinasi-populer/pulau-padar.jpg);
+}
+
+.destinasi-bali-5 {
+    background-image: url(image/destinasi-populer/destinasi/gunung-rinjani.jpg);
+}
+
+.destinasi-bali-6 {
+    background-image: url(image/destinasi-populer/destinasi/pantai-pink.jpg);
+}
+
+/* destinasi maluku-papua */
+.banner-destinasi-papua {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(image/banner/raja-ampat-papuabarat.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destinasi-papua-1 {
+    background-image: url(image/destinasi-populer/destinasi/danau-sentani.jpg);
+}
+
+.destinasi-papua-2 {
+    background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
+}
+
+.destinasi-papua-3 {
+    background-image: url(image/destinasi-populer/destinasi/teluk-cendrawasih-papua.jpg);
+}
+
+.destinasi-papua-4 {
+    background-image: url(image/destinasi-populer/destinasi/pantai-baseG-papua.jpg);
+}
+
+.destinasi-papua-5 {
+    background-image: url(image/destinasi-populer/destinasi/pulau-pombo-maluku.jpg);
+}
+
+.destinasi-papua-6 {
+    background-image: url(image/destinasi-populer/destinasi/pantai-bosnik-papua.jpg);
+}
+
+/* destinasi kalimantan */
+.banner-destinasi-kalimantan {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(image/banner/pulau-derawan.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destinasi-kalimantan-1 {
+    background-image: url(image/destinasi-populer/destinasi/pulau-derawan.jpg);
+}
+
+.destinasi-kalimantan-2 {
+    background-image: url(image/destinasi-populer/destinasi/pasar-terapung-Lok-Baintan.jpg);
+}
+
+.destinasi-kalimantan-3 {
+    background-image: url(image/destinasi-populer/destinasi/danau-labuan-cermin1.jpg);
+}
+
+.destinasi-kalimantan-4 {
+    background-image: url(image/destinasi-populer/destinasi/bukit-kelam-kalbar.jpg);
+}
+
+.destinasi-kalimantan-5 {
+    background-image: url(image/destinasi-populer/destinasi/bukit-rimpi-kalimantan.jpg);
+}
+
+.destinasi-kalimantan-6 {
+    background-image: url(image/destinasi-populer/destinasi/pantai-melawi-kalimantan.jpg);
+}
+
+/* destinasi sulawesi */
+.banner-destinasi-sulawesi {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(image/banner/pantai-tanjungBira-sulawesi1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destinasi-sulawesi-1 {
+    background-image: url(image/destinasi-populer/destinasi/bunaken.jpg);
+}
+
+.destinasi-sulawesi-2 {
+    background-image: url(image/destinasi-populer/destinasi/wakatobi-sulawesi.jpg);
+}
+
+.destinasi-sulawesi-3 {
+    background-image: url(image/destinasi-populer/destinasi/tana-toraja-sulawesi.jpg);
+}
+
+.destinasi-sulawesi-4 {
+    background-image: url(image/destinasi-populer/destinasi/taka-bonerate-sulawesi.jpg);
+}
+
+.destinasi-sulawesi-5 {
+    background-image: url(image/destinasi-populer/destinasi/pulau-togean-sulawesi.jpg);
+}
+
+.destinasi-sulawesi-6 {
+    background-image: url(image/destinasi-populer/destinasi/pantai-tanjungBira-sulawesi.jpg);
+}
+
+/* destinasi sumatera */
+.banner-destinasi-sumatera {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(image/banner/Bukit-Khayangan-jambi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destinasi-sumatera-1 {
+    background-image: url(image/destinasi-populer/destinasi/Bukit-Khayangan-jambi.jpg);
+}
+
+.destinasi-sumatera-2 {
+    background-image: url(image/destinasi-populer/destinasi/Air-Terjun-sipiso-piso.jpg);
+}
+
+.destinasi-sumatera-3 {
+    background-image: url(image/destinasi-populer/destinasi/gunung-leuser.jpg);
+}
+
+.destinasi-sumatera-4 {
+    background-image: url(image/destinasi-populer/destinasi/danau-toba.jpg);
+}
+
+.destinasi-sumatera-5 {
+    background-image: url(image/destinasi-populer/destinasi/Pantai-Lhok-Mee.jpg);
+}
+
+.destinasi-sumatera-6 {
+    background-image: url(image/destinasi-populer/destinasi/Pantai-sorake-nias.jpg);
+}
+
+/* --------------------------- End of Destinasi page --------------------------- */
+
 @media (min-width: 1200px) {
 
+    /* -------------- home page -------------- */
     /* kenapa kami */
     .block-kenapa2 {
         margin-left: 70px
@@ -327,12 +714,13 @@ nav.sticky {
     }
 
     /* end of kenapa kami */
-
+    /* -------------- end of home page -------------- */
 
 }
 
 @media (min-width: 992px) {
 
+    /* -------------- home page -------------- */
     /* navbar */
     .navbar-home {
         padding-left: 35px !important;
@@ -355,7 +743,6 @@ nav.sticky {
     .caption-banner button {
         font-size: 20px !important;
     }
-
 
     /* kenapa kami */
     .kenapa-kami,
@@ -431,15 +818,15 @@ nav.sticky {
     .testimoni-block-dua {
         border-radius: 0 10px 10px 0 !important;
     }
+
+    /* -------------- end of home page -------------- */
 }
-
-
-
 
 @media (min-width: 768px) {}
 
 @media (min-width: 576px) {
 
+    /* -------------- home page -------------- */
     /* navbar */
     .active-nav {
         width: 80px;
@@ -521,11 +908,13 @@ nav.sticky {
     .testimoni-block-dua {
         border-radius: 0 0 10px 10px;
     }
-}
 
+    /* --------------end of home page -------------- */
+}
 
 @media (max-width: 575.98px) {
 
+    /* -------------- home page --------------*/
     /* navbar */
     .active-nav {
         width: 80px;
@@ -603,4 +992,6 @@ nav.sticky {
     .hubungi-kami-alamat {
         margin-top: 20px;
     }
+
+    /* --------------end of home page -------------- */
 }

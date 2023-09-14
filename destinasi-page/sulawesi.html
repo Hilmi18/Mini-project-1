@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinasi | Sulawesi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="../dist/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 transition-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-font mx-5" href="../index.html">
+                <h3>Euonia</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pt-2 navbar-item" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item navbar-home">
+                        <a class="nav-link color-nav navbar-jarak" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link color-nav navbar-responsif navbar-jarak" href="../promo.html">Promo</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link color-nav navbar-responsif navbar-jarak active-nav2"
+                            href="../destinasi.html">Destinasi</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link color-nav navbar-responsif navbar-jarak" data-bs-toggle="modal"
+                            data-bs-target="#jelajahiModal" href="#">Jelajahi</a>
+                    </li>
+                </ul>
+                <a class="navbar-nav nav-link color-nav navbar-login navbar-responsif" data-bs-toggle="modal"
+                    data-bs-target="#signInModal" href="#">Sign In</a>
+                <button type="button" class="btn btn-outline-light navbar-register" data-bs-toggle="modal"
+                    data-bs-target="#signUpModal">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar jelajahi pop up -->
+    <div class="modal fade" id="jelajahiModal" tabindex="-1" aria-labelledby="jelajahiModalLabel" aria-hidden="true">
+        <div class=" modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="d-flex justify-content-between">
+                        <h1 class="modal-title fs-5 mx-auto py-3" id="jelajahiModalLabel">
+                            Jelajahi</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="px-5">
+                                <label for="jenisPerjalanan" class="form-label mt-3">Pilih jenis perjalanan</label>
+                                <select class="form-select" aria-label="Default select example" id="jenisPerjalanan">
+                                    <option selected>Pilih...</option>
+                                    <option value="1">Keluarga</option>
+                                    <option value="2">Pasangan</option>
+                                    <option value="3">Grup</option>
+                                    <option value="4">Petualangan</option>
+                                    <option value="5">Bisnis</option>
+                                </select>
+                            </div>
+                            <div class="px-5">
+                                <div>
+                                    <label for="pilihTipe" class="form-label mt-3">Pilih Tipe yang
+                                        Diminati</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="pilihTipe">
+                                    <label class="form-check-label" for="pilihTipe">
+                                        Alam & Satwa Liar
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="pilihTipe">
+                                    <label class="form-check-label" for="pilihTipe">
+                                        Seni, Budaya & Warisan
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="pilihTipe">
+                                    <label class="form-check-label" for="pilihTipe">
+                                        Kuliner
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="pilihTipe">
+                                    <label class="form-check-label" for="pilihTipe">
+                                        Petualangan
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <a href="destinasi.html">
+                            <button type="button" class="btn btn-primary my-4 button-tema-color">Jelajahi
+                                Indonesia</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar sign in pop up -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="d-flex justify-content-between">
+                        <h1 class="modal-title fs-5 mx-auto py-3" id="signInModalLabel">Sign In</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-dismissible p-2 alert-success mx-5 signIn-alert" id="signIn">
+                        Berhasil Sign In
+                        <button type="button" class="btn-close pb-2" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="mb-3 px-5">
+                                <label for="exampleInputEmail1" class="form-label mt-3">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 px-5">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <button type="button" class="btn btn-primary px-5 my-4 button-tema-color"
+                            onclick="showSignIn()">Sign In</button>
+                    </div>
+                    <div class="text-center navbar-toSign">
+                        <p>Belum punya akun? <a data-bs-toggle="modal" data-bs-target="#signUpModal" href="">Daftar
+                                Disini</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar sign up pop up -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="d-flex justify-content-between">
+                        <h1 class="modal-title fs-5 mx-auto py-3" id="signUpModalLabel">Sign Up</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-dismissible p-2 alert-success mx-5 signIn-alert" id="signUp">
+                        Berhasil Sign Up
+                        <button type="button" class="btn-close pb-2" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="px-5">
+                                <label for="namaDepan" class="form-label mt-3">Nama Depan</label>
+                                <input type="text" class="form-control" id="namaDepan">
+                            </div>
+                            <div class="px-5">
+                                <label for="namaBelakang" class="form-label mt-3">Nama Belakang</label>
+                                <input type="text" class="form-control" id="namaBelakang">
+                            </div>
+                            <div class="px-5">
+                                <label for="exampleInputEmail1" class="form-label mt-3">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="px-5">
+                                <label for="signUpPasword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="signUpPasword">
+                            </div>
+                            <div class="px-5">
+                                <label for="signUpPasword2" class="form-label">Konfirmasi Password</label>
+                                <input type="password" class="form-control" id="signUpPasword2">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <button type="button" class="btn btn-primary px-5 my-4 button-tema-color"
+                            onclick="showSignUp()">Sign Up</button>
+                    </div>
+                    <div class="text-center navbar-toSign">
+                        <p>Sudah punya akun? <a data-bs-toggle="modal" data-bs-target="#signInModal" href="">Masuk
+                                Disini</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="container-fluid banner-destinasi-sulawesi  d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="text-light text-center align-items-center" data-aos="zoom-in">Destinasi | Sulawesi</h1>
+        </div>
+    </div>
+
+    <!-- breadcrumb -->
+    <div class="container pt-3">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="breadcrumb-color" href="../index.html">Home</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-color" href="../destinasi.html">Destinasi</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sulawesi</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- destinasi sulawesi -->
+    <div class="containe-fluid">
+        <div class="container my-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                    <a href="" class="destinasi-decoration" data-bs-toggle="modal"
+                        data-bs-target="#destinasi-popup-sulawesi1">
+                        <div
+                            class="destinasi-page-image destinasi-sulawesi-1 hover-image d-flex justify-content-center">
+                            <div class="mx-3">
+                                <h2 class="text-light destinasi-font-title display-4">Bunaken</h2>
+                                <h5 class="text-light destinasi-margin-title"><i class="bi bi-geo-alt-fill"></i> Manado,
+                                    Sulawesi Utara</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                    <a href="" class="destinasi-decoration" data-bs-toggle="modal"
+                        data-bs-target="#destinasi-popup-sulawesi2">
+                        <div
+                            class="destinasi-page-image destinasi-sulawesi-2 hover-image d-flex justify-content-center">
+                            <div class="mx-3">
+                                <h2 class="text-light destinasi-font-title display-4">Wakatobi</h2>
+                                <h5 class="text-light destinasi-margin-title"><i class="bi bi-geo-alt-fill"></i>
+                                    Wakatobi, Sulawesi Tenggara</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                    <a href="" class="destinasi-decoration" data-bs-toggle="modal"
+                        data-bs-target="#destinasi-popup-sulawesi3">
+                        <div
+                            class="destinasi-page-image destinasi-sulawesi-3 hover-image d-flex justify-content-center   ">
+                            <div class="mx-3">
+                                <h2 class="text-light destinasi-font-title display-4">Tana Toraja</h2>
+                                <h5 class="text-light destinasi-margin-title"><i class="bi bi-geo-alt-fill"></i>
+                                    Sulawesi Selatan</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                    <a href="" class="destinasi-decoration" data-bs-toggle="modal"
+                        data-bs-target="#destinasi-popup-sulawesi4">
+                        <div
+                            class="destinasi-page-image destinasi-sulawesi-4 hover-image d-flex justify-content-center">
+                            <div class="mx-3">
+                                <h2 class="text-light destinasi-font-title display-4">Taka Bonerate</h2>
+                                <h5 class="text-light destinasi-margin-title"><i class="bi bi-geo-alt-fill"></i>
+                                    Selayar, sulawesi Selatan</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6  mb-4" data-aos="zoom-in">
+                    <a href="" class="destinasi-decoration" data-bs-toggle="modal"
+                        data-bs-target="#destinasi-popup-sulawesi5">
+                        <div
+                            class="destinasi-page-image destinasi-sulawesi-5 hover-image d-flex justify-content-center">
+                            <div class="mx-3">
+                                <h2 class="text-light destinasi-font-title display-4"> Pulauan Togean </h2>
+                                <h5 class="text-light destinasi-margin-title"><i class="bi bi-geo-alt-fill"></i> Teluk
+                                    Tomini, Sulawesi Tengah</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in">
+                    <a href="" class="destinasi-decoration" data-bs-toggle="modal"
+                        data-bs-target="#destinasi-popup-sulawesi6">
+                        <div
+                            class="destinasi-page-image destinasi-sulawesi-6 hover-image d-flex justify-content-center">
+                            <div class="mx-3">
+                                <h2 class="text-light destinasi-font-title display-4">Tanjung Bira</h2>
+                                <h5 class="text-light destinasi-margin-title"><i class="bi bi-geo-alt-fill"></i>
+                                    Bulukumba, Sulawesi Selatan</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pop up destinasi sulawesi -->
+    <div class="modal fade" id="destinasi-popup-sulawesi1" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body modal-padding">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <img src="../image/destinasi-populer/destinasi/bunaken.jpg" class="modal-image" alt="">
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="d-flex justify-content-between mt-2 mb-3">
+                                <h3 class="title-font modal-title mt-sm-3 mt-lg-5">Taman Nasional Bunaken</h3>
+                                <button type="button" class="btn-close modal-button mx-2" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p class="modal-lokasi"><i class="bi bi-geo-alt-fill"></i> Manado, Sulawesi Utara</p>
+                            <div class="modal-text mx-4 mb-sm-4">
+                                <p> Taman Nasional Bunaken adalah taman laut yang terletak di Sulawesi Utara, Indonesia.
+                                    Taman ini terletak di Segitiga Terumbu Karang yang menjadi habitat bagi 390 spesies
+                                    terumbu karang dan juga berbagai spesies ikan, moluska, reptil, dan mamalia laut.
+                                    Taman Nasional Bunaken merupakan perwakilan ekosistem laut Indonesia, meliputi
+                                    padang rumput laut, terumbu karang, dan ekosistem pantai. Taman nasional ini
+                                    didirikan pada tahun 1991 dan meliputi wilayah seluas 890.65 km².
+                                    97% dari taman nasional ini merupakan habitat laut, sementara 3% sisanya merupakan
+                                    daratan, meliputi lima pulau: Bunaken, Manado Tua, Mantehage, Naen, dan Siladen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="destinasi-popup-sulawesi2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body modal-padding">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <img src="../image/destinasi-populer/destinasi/wakatobi-sulawesi.jpg" class="modal-image"
+                                alt="">
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="d-flex justify-content-between mt-2 mb-3">
+                                <h3 class="title-font modal-title mt-sm-3 mt-lg-5">Wakatobi</h3>
+                                <button type="button" class="btn-close modal-button mx-2" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p class="modal-lokasi"><i class="bi bi-geo-alt-fill"></i> Wakatobi, Sulawesi Tenggara</p>
+                            <div class="modal-text mx-4 mb-sm-4">
+                                <p>akatobi menyimpan sejuta pesona wisata, mulai dari keindahan wisata bawah laut,
+                                    wisata pantai, peninggalan bersejarah, hingga seni budaya. Setelah ditetapkan
+                                    sebagai salah satu dari sepuluh destinasi wisata prioritas oleh pemerintah pusat,
+                                    Wakatobi terus berbenah. Data dari Taman Nasional Wakatobi memperlihatkan betapa
+                                    Wakatobi layak dijadikan destinasi pariwisata prioritas. Dari 820 jenis karang yang
+                                    ada di dunia, 750 jenis karang (90 persen) di antaranya ada di Wakatobi. Dengan
+                                    demikian, 90 persen jenis karang di dunia terdapat di Wakatobi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="destinasi-popup-sulawesi3" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body modal-padding">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <img src="../image/destinasi-populer/destinasi/tana-toraja-sulawesi.jpg" class="modal-image"
+                                alt="">
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="d-flex justify-content-between mt-2 mb-3">
+                                <h3 class="title-font modal-title mt-sm-3 mt-lg-5">Tana Toraja</h3>
+                                <button type="button" class="btn-close modal-button mx-2" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p class="modal-lokasi"><i class="bi bi-geo-alt-fill"></i> Sulawesi Selatan</p>
+                            <div class="modal-text mx-4 mb-sm-4">
+                                <p>Tana Toraja adalah salah satu kabupaten yang berada di provinsi Sulawesi Selatan,
+                                    Indonesia. Ibu kota dari kabupaten ini ada di kecamatan Makale. Tana Toraja memiliki
+                                    luas wilayah 2.054,30 km² dan pada pertengahan tahun 2022 memiliki penduduk sebanyak
+                                    270.984 jiwa dengan kepadatan 132 jiwa/km². Suku Toraja yang mendiami daerah
+                                    pegunungan dan mempertahankan gaya hidup yang khas dan masih menunjukkan gaya hidup
+                                    Austronesia yang asli dan mirip dengan budaya suku Batak Toba dan Nias yang ada di
+                                    provinsi Sumatra Utara. Daerah ini merupakan salah satu objek wisata unggulan di
+                                    provinsi Sulawesi Selatan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="destinasi-popup-sulawesi4" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body modal-padding">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <img src="../image/destinasi-populer/destinasi/taka-bonerate-sulawesi.jpg"
+                                class="modal-image" alt="">
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="d-flex justify-content-between mt-2 mb-3">
+                                <h3 class="title-font modal-title mt-sm-3 mt-lg-5">Taman Nasional Taka Bonerate</h3>
+                                <button type="button" class="btn-close modal-button mx-2" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p class="modal-lokasi"><i class="bi bi-geo-alt-fill"></i> Selayar, sulawesi Selatan</p>
+                            <div class="modal-text mx-4 mb-sm-4">
+                                <p>Taman Nasional Taka Bonerate merupakan sebuah taman laut yang memiliki gugusan
+                                    terumbu karang berbentuk cincin, pulau atau serangkaian pulau (atol) yang sangat
+                                    luas. Oleh karena itu Taman Nasional Taka Bonerate termasuk kawasan atol terbesar
+                                    ketiga di dunia, setelah Kwajifein di Kepulauan Marshall dan Suvadiva di Kepulauan
+                                    Maladewa. Luas kawasan atol yang ada di TN. Taka Bonerate sekitar 220.000 ha, dan
+                                    telah diajukan menjadi situs warisan dunia sejak tahun 2005 lalu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="destinasi-popup-sulawesi5" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body modal-padding">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <img src="../image/destinasi-populer/destinasi/pulau-togean-sulawesi.jpg"
+                                class="modal-image" alt="">
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="d-flex justify-content-between mt-2 mb-3">
+                                <h3 class="title-font modal-title mt-sm-3 mt-lg-5">Pulauan Togean</h3>
+                                <button type="button" class="btn-close modal-button mx-2" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p class="modal-lokasi"><i class="bi bi-geo-alt-fill"></i> Teluk Tomini, Sulawesi Tengah</p>
+                            <div class="modal-text mx-4 mb-sm-4">
+                                <p> Pulau Togean merupakan Pulau yang terletak di Teluk Tomini, Sulawesi Tengah
+                                    Indonesia. Secara administrasi, wilayah ini berada di Kabupaten Tojo Una-una,
+                                    Kepulauan Togean tersebar sepanjang kurang lebih 90 Kilometer. Pulau ini dikenal
+                                    kaya akan terumbu karang dan berbagai biota laut yang langka dan dilindungi. Terumbu
+                                    karang di Pulau Togean kaya akan keanekaragaman hayati laut dengan 4 tipe terumbu
+                                    karang: karang tepi (fringing reef), karang penghalang (barrier reef), karang tompok
+                                    (patch reef), dan karang cincin (atoll).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="destinasi-popup-sulawesi6" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body modal-padding">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <img src="../image/destinasi-populer/destinasi/pantai-tanjungBira-sulawesi.jpg"
+                                class="modal-image" alt="">
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="d-flex justify-content-between mt-2 mb-3">
+                                <h3 class="title-font modal-title mt-sm-3 mt-lg-5">Tanjung Bira</h3>
+                                <button type="button" class="btn-close modal-button mx-2" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p class="modal-lokasi"><i class="bi bi-geo-alt-fill"></i> Bulukumba, Sulawesi Selatan</p>
+                            <div class="modal-text mx-4 mb-sm-4">
+                                <p>Tanjung Bira adalah pantai kece, nan mewah yang terletak di Kabupaten Bulukumba,
+                                    Provinsi Sulawesi Selatan. Ketenangan ombak, dan gradasi warna air lautnya adalah
+                                    pesona keindahan utama Tanjung Bira. Pesona keindahan Tanjung Bira memang luar
+                                    biasa. Kunjungan wisata yang datang ke lokasi tersebut bukan hanya didominasi oleh
+                                    wisatawan lokal, maupun nasional saja.Jika dari pusat kota Makassar jarak kawasan
+                                    ini kurang lebih 200 km. Jarak ini bisa di tempuh dengan kisaran waktu 5-6 jam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- hubungi kami -->
+    <div class="container-fluid py-5 bg-black">
+        <div class="container text-light ">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="text-center title-font">Hubungi Kami</h2>
+                    <div class="alert alert-dismissible p-2 alert-success" id="myAlert">
+                        Pesan berhasil dikirim
+                        <button type="button" class="btn-close pb-2" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea id="pesan" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary button-tema-color" onclick="showAlert()">Kirim
+                            Pesan</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
+                    <div>
+                        <h2 class="title-font mb-3 mt-sm-4 mt-md-4 hubungi-kami-alamat">Alamat</h2>
+                        <div>
+                            <i class="bi bi-geo-alt me-4"></i>Jl. Dieng Km 11, Wonosobo, Jawa Tengah
+                        </div>
+                        <div>
+                            <i class="bi bi-envelope me-4"></i>Euonia@gmail.com
+                        </div>
+                        <div>
+                            <i class="bi bi-telephone me-4"></i>+62 1234567890
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h2 class="me-4 mt-4 title-font">Ikuti Kami</h2>
+                        <div class="d-flex align-items-end gap-4">
+                            <i class="bi bi-facebook ikuti-icon-size"></i>
+                            <i class="bi bi-twitter ikuti-icon-size"></i>
+                            <i class="bi bi-linkedin ikuti-icon-size"></i>
+                            <i class="bi bi-instagram ikuti-icon-size"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid d-flex pt-3">
+        <div class="container">
+            <p class="text-center">&copy; 2023 All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            anchorPlacement: 'top-bottom'
+        });
+    </script>
+
+    <!-- navbar -->
+    <script>
+        window.addEventListener("scroll", function () {
+            let nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+    <!-- navbar sign in -->
+    <script>
+        let signIn = document.getElementById('signIn');
+        signIn.style.display = 'none';
+
+        function showSignIn() {
+            signIn.style.display = 'block'
+        }
+    </script>
+
+    <!-- navbar sign up -->
+    <script>
+        let signUp = document.getElementById('signUp');
+        signUp.style.display = 'none';
+
+        function showSignUp() {
+            signUp.style.display = 'block'
+        }
+    </script>
+
+    <!-- hubungi kami -->
+    <script>
+        var myAlert = document.getElementById('myAlert');
+        myAlert.style.display = 'none';
+
+        function showAlert() {
+            myAlert.style.display = 'block'
+        }
+    </script>
+
+
+</body>
+
+</html>

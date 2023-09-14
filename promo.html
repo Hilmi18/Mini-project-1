@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euonia | Promo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="dist/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top pt-3 transition-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-font mx-5" href="index.html">
+                <h3>Euonia</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pt-2 navbar-item" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item navbar-home">
+                        <a class="nav-link color-nav navbar-jarak" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link color-nav navbar-responsif navbar-jarak active-nav2"
+                            href="promo.html">Promo</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link color-nav navbar-responsif navbar-jarak" href="destinasi.html">Destinasi</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link color-nav navbar-responsif navbar-jarak" data-bs-toggle="modal"
+                            data-bs-target="#jelajahiModal" href="#">Jelajahi</a>
+                    </li>
+                </ul>
+                <a class="navbar-nav nav-link color-nav navbar-login navbar-responsif" data-bs-toggle="modal"
+                    data-bs-target="#signInModal" href="#">Sign In</a>
+                <button type="button" class="btn btn-outline-light navbar-register" data-bs-toggle="modal"
+                    data-bs-target="#signUpModal">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar jelajahi pop up -->
+    <div class="modal fade" id="jelajahiModal" tabindex="-1" aria-labelledby="jelajahiModalLabel" aria-hidden="true">
+        <div class=" modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="d-flex justify-content-between">
+                        <h1 class="modal-title fs-5 mx-auto py-3" id="jelajahiModalLabel">
+                            Jelajahi</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="px-5">
+                                <label for="jenisPerjalanan" class="form-label mt-3">Pilih jenis perjalanan</label>
+                                <select class="form-select" aria-label="Default select example" id="jenisPerjalanan">
+                                    <option selected>Pilih...</option>
+                                    <option value="1">Keluarga</option>
+                                    <option value="2">Pasangan</option>
+                                    <option value="3">Grup</option>
+                                    <option value="4">Petualangan</option>
+                                    <option value="5">Bisnis</option>
+                                </select>
+                            </div>
+                            <div class="px-5">
+                                <div>
+                                    <label for="pilihTipe" class="form-label mt-3">Pilih Tipe yang
+                                        Diminati</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="pilihTipe">
+                                    <label class="form-check-label" for="pilihTipe">
+                                        Alam & Satwa Liar
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="pilihTipe">
+                                    <label class="form-check-label" for="pilihTipe">
+                                        Seni, Budaya & Warisan
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="pilihTipe">
+                                    <label class="form-check-label" for="pilihTipe">
+                                        Kuliner
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="pilihTipe">
+                                    <label class="form-check-label" for="pilihTipe">
+                                        Petualangan
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <a href="destinasi.html">
+                            <button type="button" class="btn btn-primary my-4 button-tema-color">Jelajahi
+                                Indonesia</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar sign in pop up -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="d-flex justify-content-between">
+                        <h1 class="modal-title fs-5 mx-auto py-3" id="signInModalLabel">Sign In</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-dismissible p-2 alert-success mx-5 signIn-alert" id="signIn">
+                        Berhasil Sign In
+                        <button type="button" class="btn-close pb-2" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="mb-3 px-5">
+                                <label for="exampleInputEmail1" class="form-label mt-3">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3 px-5">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <button type="button" class="btn btn-primary px-5 my-4 button-tema-color"
+                            onclick="showSignIn()">Sign In</button>
+                    </div>
+                    <div class="text-center navbar-toSign">
+                        <p>Belum punya akun? <a data-bs-toggle="modal" data-bs-target="#signUpModal" href="">Daftar
+                                Disini</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar sign up pop up -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="d-flex justify-content-between">
+                        <h1 class="modal-title fs-5 mx-auto py-3" id="signUpModalLabel">Sign Up</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-dismissible p-2 alert-success mx-5 signIn-alert" id="signUp">
+                        Berhasil Sign Up
+                        <button type="button" class="btn-close pb-2" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="px-5">
+                                <label for="namaDepan" class="form-label mt-3">Nama Depan</label>
+                                <input type="text" class="form-control" id="namaDepan">
+                            </div>
+                            <div class="px-5">
+                                <label for="namaBelakang" class="form-label mt-3">Nama Belakang</label>
+                                <input type="text" class="form-control" id="namaBelakang">
+                            </div>
+                            <div class="px-5">
+                                <label for="exampleInputEmail1" class="form-label mt-3">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="px-5">
+                                <label for="signUpPasword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="signUpPasword">
+                            </div>
+                            <div class="px-5">
+                                <label for="signUpPasword2" class="form-label">Konfirmasi Password</label>
+                                <input type="password" class="form-control" id="signUpPasword2">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <button type="button" class="btn btn-primary px-5 my-4 button-tema-color"
+                            onclick="showSignUp()">Sign Up</button>
+                    </div>
+                    <div class="text-center navbar-toSign">
+                        <p>Sudah punya akun? <a data-bs-toggle="modal" data-bs-target="#signInModal" href="">Masuk
+                                Disini</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="container-fluid banner-promo  d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="text-light text-center align-items-center" data-aos="zoom-in">Promo Bulan Ini</h1>
+        </div>
+
+    </div>
+
+    <!-- breadcrumb -->
+    <div class="container-fluid pt-3">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="breadcrumb-color" href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Promo</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- semua promo -->
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class="col-md-12 col-lg-2 ms-sm-4 ms-lg-0">
+                <div class="col-lg-12 list-promo">
+                    <ul class="list-group list-group-flush">
+                        <li id="semuaPromoBtn" class="list-group-item list-promo-active">
+                            <button onclick="showDiskon()" type="button" class="btn btn-link button-promo-list">Semua
+                                Promo</button>
+                        </li>
+                        <li id="diskon10Btn" class="list-group-item">
+                            <button onclick="showDiskon1()" type="button" class="btn btn-link button-promo-list">Diskon
+                                10%</button>
+                        </li>
+                        <li id="diskon15Btn" class="list-group-item">
+                            <button onclick="showDiskon2()" type="button" class="btn btn-link button-promo-list">Diskon
+                                15%</button>
+                        </li>
+                        <li id="diskon20Btn" class="list-group-item">
+                            <button id="diskon15Btn" onclick="showDiskon3()" type="button"
+                                class="btn btn-link button-promo-list">Diskon
+                                20%</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="container">
+                    <div id="semuaPromo">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/diamond-beach-nusapenida.jpg" class="card-img-top " alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Pantai Diamond</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Nusa Penida, Bali</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.500.000</p>
+                                            <p class="price-after-diskon">Rp 1.350.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/pulau-padar.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Pulau Padar</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> FLores, NTT</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.400.000</p>
+                                            <p class="price-after-diskon">Rp 1.260.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/Kelimutu-volcano.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Gunung Kelimutu</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Flores, NTT</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 900.000</p>
+                                            <p class="price-after-diskon">Rp 810.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/pulau-derawan.jpg" class="card-img-top " alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Pulau Derawan</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Berau, Kalimantan
+                                            Timur</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.700.000</p>
+                                            <p class="price-after-diskon">Rp 1.530.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/danau-toba.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Danau Toba</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Sumatera Utara</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.150.000</p>
+                                            <p class="price-after-diskon">Rp 1.035.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/gunung-prau.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Gunung Prau</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Wonosobo, Jawa Tengah
+                                        </p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 800.000</p>
+                                            <p class="price-after-diskon">Rp 720.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/Taman-laut-bunaken.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Bunaken</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Manado, Sulawesi
+                                            Utara</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.600.000</p>
+                                            <p class="price-after-diskon">Rp 1.360.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/candi-borobudur-magelang.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Candi Borobudur</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Magelang, Jawa Tengah
+                                        </p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.100.000</p>
+                                            <p class="price-after-diskon">Rp 935.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/Pantai-Kelingking-NusaPenida.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Pantai Kelingking</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Nusa Penida, Bali</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 3.700.000</p>
+                                            <p class="price-after-diskon">Rp 3.145.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/danau-sentani.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Danau Sentani</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Jayapura, Papua</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.200.000</p>
+                                            <p class="price-after-diskon">Rp 1.020.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/pulau-weh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Pulau Weh</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Sabang</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.800.000</p>
+                                            <p class="price-after-diskon">Rp 1.530.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/taman-nasional-baluran.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Taman Nasional Baluran</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Situbondo, Jawa Timur
+                                        </p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 900.000</p>
+                                            <p class="price-after-diskon">Rp 765.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            20%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/gunung-rinjani.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Gunung Rinjani</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Lombok, NTB</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.100.000</p>
+                                            <p class="price-after-diskon">Rp 900.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            20%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/gunung-bromo-jatim.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Gunung Bromo</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Jawa Timur</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.000.000</p>
+                                            <p class="price-after-diskon">Rp 800.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo" data-aos="zoom-in">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            20%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/raja-ampat-papuabarat (1).jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Raja Ampat</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Papua Barat</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.900.000</p>
+                                            <p class="price-after-diskon">Rp 1.520.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="diskon10">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/diamond-beach-nusapenida.jpg" class="card-img-top " alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Pantai Diamond</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Nusa Penida, Bali</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.500.000</p>
+                                            <p class="price-after-diskon">Rp 1.350.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/pulau-padar.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Pulau Padar</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> FLores, NTT</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.400.000</p>
+                                            <p class="price-after-diskon">Rp 1.260.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/Kelimutu-volcano.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Gunung Kelimutu</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Flores, NTT</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 900.000</p>
+                                            <p class="price-after-diskon">Rp 810.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/pulau-derawan.jpg" class="card-img-top " alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Pulau Derawan</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Berau, Kalimantan
+                                            Timut</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.700.000</p>
+                                            <p class="price-after-diskon">Rp 1.530.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/danau-toba.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Danau Toba</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Sumatera Utara</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.150.000</p>
+                                            <p class="price-after-diskon">Rp 1.035.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            10%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/gunung-prau.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Gunung Prau</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Wonosobo, Jawa Tengah
+                                        </p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 800.000</p>
+                                            <p class="price-after-diskon">Rp 720.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="diskon15">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/Taman-laut-bunaken.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Bunaken</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Manado, Sulawesi
+                                            Utara</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.600.000</p>
+                                            <p class="price-after-diskon">Rp 1.360.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/candi-borobudur-magelang.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Candi Borobudur</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Magelang, Jawa Tengah
+                                        </p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.100.000</p>
+                                            <p class="price-after-diskon">Rp 935.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/Pantai-Kelingking-NusaPenida.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Pantai Kelingking</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Nusa Penida, Bali</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 3.700.000</p>
+                                            <p class="price-after-diskon">Rp 3.145.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/danau-sentani.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Danau Sentani</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Jayapura, Papua</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.200.000</p>
+                                            <p class="price-after-diskon">Rp 1.020.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/pulau-weh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Pulau Weh</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Sabang</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.800.000</p>
+                                            <p class="price-after-diskon">Rp 1.530.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            15%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/Pantai-Kelingking-NusaPenida.jpg" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Taman Nasional Baluran</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Situbondo, Jawa Timur
+                                        </p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 900.000</p>
+                                            <p class="price-after-diskon">Rp 765.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="diskon20">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            20%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/gunung-rinjani.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Gunung Rinjani</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Lombok, NTB</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.100.000</p>
+                                            <p class="price-after-diskon">Rp 900.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            20%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/gunung-bromo-jatim.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Gunung Bromo</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Jawa Timur</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.000.000</p>
+                                            <p class="price-after-diskon">Rp 800.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card promo">
+                                    <div class="d-flex justify-content-end">
+                                        <div
+                                            class="promo-label text-light mt-3 d-flex justify-content-center align-items-center">
+                                            20%
+                                        </div>
+                                    </div>
+                                    <img src="image/promo/raja-ampat-papuabarat (1).jpg" class="card-img-top" alt="...">
+                                    <div class="card-body ms-3">
+                                        <h5 class="diskon-title mt-2">Raja Ampat</h5>
+                                        <p class="promo-lokasi"><i class="bi bi-geo-alt-fill"></i> Papua Barat</p>
+                                        <div class="card-text">
+                                            <p class="linethrough">Rp 1.900.000</p>
+                                            <p class="price-after-diskon">Rp 1.520.000</p>
+                                        </div>
+                                        <div>
+                                            <button id="diskon10Btn" class="btn btn btn-primary promo-active mt-3"
+                                                data-bs-toggle="modal" data-bs-target="#bookingModal">Booking
+                                                Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- booking sekarang pop up -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="d-flex justify-content-between">
+                        <h1 class="modal-title fs-5 mx-auto py-3" id="bookingModal">Booking Sekarang</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-dismissible p-2 alert-success mx-5 signIn-alert" id="booking">
+                        Berhasil Booking
+                        <button type="button" class="btn-close pb-2" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="px-5">
+                                <label for="namaDepan" class="form-label mt-3">Nama Lengkap<span
+                                        class="harus-diisi">*</span></label>
+                                <input type="text" class="form-control" id="namaDepan">
+                            </div>
+                            <div class="px-5">
+                                <label for="nomerHp" class="form-label mt-3">Nomer HP<span
+                                        class="harus-diisi">*</span></label>
+                                <input type="tel" class="form-control" id="nomerHp">
+                            </div>
+                            <div class="px-5">
+                                <label for="email" class="form-label mt-3">Email<span
+                                        class="harus-diisi">*</span></label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="row px-5 py-3">
+                                <div class="col-6">
+                                    <label for="dariTanggal" class="form-label">Dari Tanggal<span
+                                            class="harus-diisi">*</span></label>
+                                    <input type="date" class="form-control" id="kapan">
+                                </div>
+                                <div class="col-6">
+                                    <label for="sampaiTanggal" class="form-label">Sampai Tanggal<span
+                                            class="harus-diisi">*</span></label>
+                                    <input type="date" class="form-control" id="kapan">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <button type="button" class="btn btn-primary px-5 my-4" onclick="showBooking()">Booking
+                            Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hubungi kami -->
+    <div class="container-fluid bg-black py-5">
+        <div class="container">
+            <div class="row text-light">
+                <div class="col-lg-6">
+                    <h2 class="text-center title-font">Hubungi Kami</h2>
+                    <div class="alert alert-dismissible p-2 alert-success" id="myAlert">
+                        Pesan berhasil dikirim
+                        <button type="button" class="btn-close pb-2" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea id="pesan" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary button-tema-color" onclick="showAlert()">Kirim
+                            Pesan</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center">
+                    <div>
+                        <h2 class="title-font mb-3 mt-sm-4 mt-md-4 hubungi-kami-alamat">Alamat</h2>
+                        <div>
+                            <i class="bi bi-geo-alt me-4"></i>Jl. Dieng Km 11, Wonosobo, Jawa Tengah
+                        </div>
+                        <div>
+                            <i class="bi bi-envelope me-4"></i>Euonia@gmail.com
+                        </div>
+                        <div>
+                            <i class="bi bi-telephone me-4"></i>+62 1234567890
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h2 class="me-4 mt-4 title-font">Ikuti Kami</h2>
+                        <div class="d-flex align-items-end gap-4">
+                            <i class="bi bi-facebook ikuti-icon-size"></i>
+                            <i class="bi bi-twitter ikuti-icon-size"></i>
+                            <i class="bi bi-linkedin ikuti-icon-size"></i>
+                            <i class="bi bi-instagram ikuti-icon-size"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid d-flex pt-3">
+        <div class="container">
+            <p class="text-center">&copy; 2023 All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            anchorPlacement: 'top-bottom'
+        });
+    </script>
+
+
+    <!-- navbar -->
+    <script>
+        window.addEventListener("scroll", function () {
+            let nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+    <!-- navbar sign in -->
+    <script>
+        let signIn = document.getElementById('signIn');
+        signIn.style.display = 'none';
+
+        function showSignIn() {
+            signIn.style.display = 'block'
+        }
+    </script>
+
+    <!-- navbar sign in -->
+    <script>
+        let signUp = document.getElementById('signUp');
+        signUp.style.display = 'none';
+
+        function showSignUp() {
+            signUp.style.display = 'block'
+        }
+    </script>
+    <!-- promo button -->
+    <script>
+        let btnSemuaPromo = $("#semuaPromoBtn")
+        let btnDiskon10 = $("#diskon10Btn");
+        let btndiskon15 = $("#diskon15Btn");
+        let btndiskon20 = $("#diskon20Btn");
+
+        let senuaDiskonView = $("#semuaPromo")
+        let diskon10View = $("#diskon10");
+        let diskon15View = $("#diskon15");
+        let diskon20View = $("#diskon20");
+
+        diskon10View.hide();
+        diskon15View.hide();
+        diskon20View.hide();
+
+        function showDiskon() {
+            btnDiskon10.removeClass('list-promo-active');
+            btndiskon15.removeClass('list-promo-active');
+            btndiskon20.removeClass('list-promo-active');
+            btnSemuaPromo.addClass('list-promo-active');
+
+            diskon10View.hide(1000);
+            diskon15View.hide(1000);
+            diskon20View.hide(1000);
+            senuaDiskonView.show(1000);
+
+        }
+
+        function showDiskon1() {
+            btnSemuaPromo.removeClass('list-promo-active');
+            btndiskon15.removeClass('list-promo-active');
+            btndiskon20.removeClass('list-promo-active');
+            btnDiskon10.addClass('list-promo-active');
+
+            senuaDiskonView.hide(1000);
+            diskon15View.hide(1000);
+            diskon20View.hide(1000);
+            diskon10View.show(1000);
+        }
+        function showDiskon2() {
+            btnSemuaPromo.removeClass('list-promo-active');
+            btnDiskon10.removeClass('list-promo-active');
+            btndiskon20.removeClass('list-promo-active');
+            btndiskon15.addClass('list-promo-active');
+
+            senuaDiskonView.hide(1000);
+            diskon10View.hide(1000);
+            diskon20View.hide(1000);
+            diskon15View.show(1000);
+        }
+        function showDiskon3() {
+            btnSemuaPromo.removeClass('list-promo-active');
+            btnDiskon10.removeClass('list-promo-active');
+            btndiskon15.removeClass('list-promo-active');
+            btndiskon20.addClass('list-promo-active');
+
+            senuaDiskonView.hide(1000);
+            diskon10View.hide(1000);
+            diskon15View.hide(1000);
+            diskon20View.show(1000);
+        }
+    </script>
+
+    <script>
+        let booking = document.getElementById('booking');
+        booking.style.display = 'none';
+
+        function showBooking() {
+            booking.style.display = 'block'
+        } 
+    </script>
+
+    <!-- hubungi kami -->
+    <script>
+        var myAlert = document.getElementById('myAlert');
+        myAlert.style.display = 'none';
+
+        function showAlert() {
+            myAlert.style.display = 'block'
+        }
+    </script>
+
+</body>
+
+</html>
