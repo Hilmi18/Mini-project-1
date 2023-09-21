@@ -1,997 +1,997 @@
 @font-face {
-    font-family: Arthemis;
-    src: url('font/Arthemis-PKY27.ttf') format('truetype');
+  font-family: Arthemis;
+  src: url("font/Arthemis-PKY27.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: Nunito;
-    src: url('font/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-family: Nunito;
+  src: url("font/Nunito-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: Oswald;
-    src: url('font/Oswald-ymXe.ttf') format('truetype');
+  font-family: Oswald;
+  src: url("font/Oswald-ymXe.ttf") format("truetype");
 }
 
 body {
-    font-family: Nunito;
+  font-family: Nunito;
 }
 
 /* navbar */
 .navbar-brand-font {
-    font-family: Arthemis, arial;
-    height: 37px;
-    color: rgb(255, 145, 0);
+  font-family: Arthemis, arial;
+  height: 37px;
+  color: rgb(255, 145, 0);
 }
 
 .navbar-item {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .navbar-item a:hover {
-    color: rgb(255, 145, 0);
-    transition: .5s;
+  color: rgb(255, 145, 0);
+  transition: 0.5s;
 }
 
 .active-nav {
-    background-color: rgb(255, 145, 0, .5);
-    border-radius: 20px;
-    color: white !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    font-weight: bold !important;
+  background-color: rgb(255, 145, 0, 0.5);
+  border-radius: 20px;
+  color: white !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-weight: bold !important;
 }
 
 .active-nav:hover {
-    color: white !important;
+  color: white !important;
 }
 
 .navbar-login {
-    margin-right: -20px;
+  margin-right: -20px;
 }
 
 .navbar-toSign {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .navbar-toSign a {
-    color: rgb(255, 145, 0);
+  color: rgb(255, 145, 0);
 }
 
 .navbar-register {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border-color: rgb(255, 145, 0);
-    transition: .5s;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-color: rgb(255, 145, 0);
+  transition: 0.5s;
 }
 
 .navbar-register:hover {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border-color: rgb(255, 145, 0);
-    background-color: rgb(255, 145, 0);
-    color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-color: rgb(255, 145, 0);
+  background-color: rgb(255, 145, 0);
+  color: white;
 }
 
 .color-nav {
-    color: white;
-    font-weight: lighter;
+  color: white;
+  font-weight: lighter;
 }
 
 .transition-nav {
-    transition: .3s;
+  transition: 0.3s;
 }
 
 nav.sticky {
-    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .4));
-    margin-top: -15px;
-    border-bottom: 1px solid rgba(231, 231, 231, 0.3);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+  margin-top: -15px;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.3);
 }
 
 .signIn-alert {
-    margin-bottom: -10px !important;
+  margin-bottom: -10px !important;
 }
 
 /* end of navbar */
 
 /* banner */
 .title-font {
-    font-family: Oswald;
+  font-family: Oswald;
 }
 
 .banner1 {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(255, 255, 255, 0)), url(image/banner/padarIsland1-NTT.jpg);
-    /* background: linear-gradient(rgba(0, 0, 0, .4), rgba(255, 255, 255, 0)), url(image/banner/PadarIsland-ntt.jpg); */
-    background-size: cover;
-    background-position: center;
-    transition: .8s;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0)),
+    url(image/banner/padarIsland1-NTT.jpg);
+  /* background: linear-gradient(rgba(0, 0, 0, .4), rgba(255, 255, 255, 0)), url(image/banner/PadarIsland-ntt.jpg); */
+  background-size: cover;
+  background-position: center;
+  transition: 0.8s;
 }
 
 .banner2 {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(255, 255, 255, 0)), url(image/banner/gunung-bromo-jatim.jpg);
-    background-size: cover;
-    background-position: center;
-    transition: .8s;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0)),
+    url(image/banner/gunung-bromo-jatim.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: 0.8s;
 }
 
 .banner3 {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(255, 255, 255, 0)), url(image/banner/kelingking-beach.jpg);
-    background-size: cover;
-    background-position: center;
-    transition: .8s;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0)),
+    url(image/banner/kelingking-beach.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: 0.8s;
 }
 
 .caption-banner {
-    padding-bottom: 40vh;
+  padding-bottom: 40vh;
 }
 
 .caption-banner h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .caption-banner p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .carousel-form {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .carousel-button {
-    border-radius: 20px;
-
+  border-radius: 20px;
 }
 
 .btn-banner {
-    border-color: rgb(255, 145, 0);
-    transition: .5s;
+  border-color: rgb(255, 145, 0);
+  transition: 0.5s;
 }
 
 .btn-banner:hover {
-    border-color: rgb(255, 145, 0);
-    background-color: rgb(255, 145, 0);
-    color: white;
+  border-color: rgb(255, 145, 0);
+  background-color: rgb(255, 145, 0);
+  color: white;
 }
 
 /* end of banner */
 
 /* promo */
 .promo-bg {
-    background-color: white;
+  background-color: white;
 }
 
 .promo-title {
-    color: black;
+  color: black;
 }
 
 .promo-button {
-    color: #8c8c8c;
-    border: none;
+  color: #8c8c8c;
+  border: none;
 }
 
 .button-promo-selengkapnya {
-    border-color: #3488ce;
-    color: #3488ce;
+  border-color: #3488ce;
+  color: #3488ce;
 }
 
 .button-promo-selengkapnya:hover {
-    border-color: #3488ce;
-    color: #3488ce;
+  border-color: #3488ce;
+  color: #3488ce;
 }
 
 .promo-active,
 .button-tema-color {
-    background-color: rgb(255, 145, 0);
-    /* background-color: #3488ce !important; */
-    color: white;
-    border-color: rgb(255, 145, 0);
+  background-color: rgb(255, 145, 0);
+  /* background-color: #3488ce !important; */
+  color: white;
+  border-color: rgb(255, 145, 0);
 }
 
 .promo-active:hover {
-    background-color: rgb(216, 124, 3);
-    color: white;
+  background-color: rgb(216, 124, 3);
+  color: white;
 }
 
 .promo {
-    transition: .5s;
+  transition: 0.5s;
 }
 
 .promo:hover {
-    transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
 }
 
 .linethrough {
-    text-decoration: line-through red;
-    font-size: 13px;
+  text-decoration: line-through red;
+  font-size: 13px;
 }
 
 .image-diskon {
-    padding: 0px;
+  padding: 0px;
 }
 
 .diskon-title,
 .price-after-diskon {
-    font-weight: bold;
-    /* color: #3488ce; */
-    color: rgb(255, 145, 0);
-
+  font-weight: bold;
+  /* color: #3488ce; */
+  color: rgb(255, 145, 0);
 }
 
 .price-after-diskon {
-    font-size: 25px;
-    margin: -20px 0 0 -2px;
+  font-size: 25px;
+  margin: -20px 0 0 -2px;
 }
 
 .diskon-title {
-    margin-top: -5px;
-    margin-bottom: -1px;
-    color: black;
+  margin-top: -5px;
+  margin-bottom: -1px;
+  color: black;
 }
 
 .harus-diisi {
-    color: red;
+  color: red;
 }
 
 /* kenpa kami */
 .kenapa-kami-container {
-    background-color: black;
+  background-color: black;
 }
 
 .icon-whyUs {
-    width: 90px;
-    height: 90px;
-    border: 2px solid rgb(255, 145, 0);
-    border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border: 2px solid rgb(255, 145, 0);
+  border-radius: 50%;
 }
 
 .kenapa-image {
-    height: 550px;
-    background-image: url(image/kenapa-kami/tari-kecak-bali.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
+  height: 550px;
+  background-image: url(image/kenapa-kami/tari-kecak-bali.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
 }
 
 /* destinasi populer */
 .destinasi-image1,
 .destinasi-image2 {
-    height: 60vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    transition: 0.5s;
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: 0.5s;
 }
 
 .destinasi-image3,
 .destinasi-image4,
 .destinasi-image5 {
-    height: 50vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    transition: 0.5s;
-    flex-direction: column;
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: 0.5s;
+  flex-direction: column;
 }
 
 .destinasi-image1 {
-    background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
+  background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
 }
 
 .destinasi-image2 {
-    background-image: url(image/destinasi-populer/candi-borobudur-magelang.jpg);
+  background-image: url(image/destinasi-populer/candi-borobudur-magelang.jpg);
 }
 
 .destinasi-image3 {
-    background-image: url(image/destinasi-populer/Kelimutu-volcano.jpg);
+  background-image: url(image/destinasi-populer/Kelimutu-volcano.jpg);
 }
 
 .destinasi-image4 {
-    background-image: url(image/destinasi-populer/pulau-padar.jpg);
+  background-image: url(image/destinasi-populer/pulau-padar.jpg);
 }
 
 .destinasi-image5 {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(image/destinasi-populer/diamond-beach-nusapenida.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(image/destinasi-populer/diamond-beach-nusapenida.jpg);
 }
 
 .destinasi-font-title {
-    font-family: Arthemis, Arial;
+  font-family: Arthemis, Arial;
 }
 
 .destinasi-margin-title {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 
 .hover-image:hover {
-    transform: scale(1.1);
-
+  transform: scale(1.1);
 }
 
 .destinasi-image1:hover {
-    transform: scale(1.05) !important;
+  transform: scale(1.05) !important;
 }
 
 .destinasi-button {
-    width: 200px;
-    border-radius: 20px;
-    border-color: rgb(255, 145, 0);
-    transition: .5s;
+  width: 200px;
+  border-radius: 20px;
+  border-color: rgb(255, 145, 0);
+  transition: 0.5s;
 }
 
 .destinasi-button:hover {
-    border-color: rgb(255, 145, 0);
-    background-color: rgb(255, 145, 0);
-    color: white;
+  border-color: rgb(255, 145, 0);
+  background-color: rgb(255, 145, 0);
+  color: white;
 }
-
 
 /* modal */
 .destinasi-decoration {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .modal-padding {
-    padding: 0px;
+  padding: 0px;
 }
 
-
 .modal-image {
-    width: 100%;
-    height: 100%;
-    padding: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
 }
 
 .modal-lokasi {
-    margin-top: -20px;
-    font-size: 13px;
-    color: rgb(83, 81, 81);
+  margin-top: -20px;
+  font-size: 13px;
+  color: rgb(83, 81, 81);
 }
 
 .modal-text {
-    text-align: justify;
+  text-align: justify;
 }
 
 /* apa kata mereka */
 
 .line {
-    max-width: 400px;
-
+  max-width: 400px;
 }
 
 .testimoni-profil {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    /* border: 5px solid rgb(163, 162, 162); */
-    border: 4px solid rgb(255, 145, 0);
-    overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* border: 5px solid rgb(163, 162, 162); */
+  border: 4px solid rgb(255, 145, 0);
+  overflow: hidden;
 }
 
 .testimoni-profil-name {
-    margin-bottom: -3px;
+  margin-bottom: -3px;
 }
 
 .testimoni-job {
-    color: rgb(163, 162, 162);
+  color: rgb(163, 162, 162);
 }
 
 .testimoni-text {
-    text-align: justify;
-    text-indent: 50px;
+  text-align: justify;
+  text-indent: 50px;
 }
 
 /* hubungi kami */
 .ikuti-icon-size {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 /* --------------------------- Promo page --------------------------- */
 .active-nav2 {
-    background-color: rgb(255, 145, 0, .5);
-    border-radius: 20px;
-    color: white !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    font-weight: bold !important;
+  background-color: rgb(255, 145, 0, 0.5);
+  border-radius: 20px;
+  color: white !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-weight: bold !important;
 }
 
 .breadcrumb-color {
-    color: rgb(255, 145, 0) !important;
+  color: rgb(255, 145, 0) !important;
 }
 
 .banner-promo {
-    height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(image/banner/gunung-bromo-jatim.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(image/banner/gunung-bromo-jatim.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .list-promo {
-    border-left: 5px solid rgb(180, 177, 177);
+  border-left: 5px solid rgb(180, 177, 177);
 }
 
 .list-promo-active {
-    border-left: 5px solid black !important;
-    margin-left: -5px;
+  border-left: 5px solid black !important;
+  margin-left: -5px;
 }
 
 .button-promo-list {
-    text-decoration: none;
-    color: black;
-    padding: 2px;
+  text-decoration: none;
+  color: black;
+  padding: 2px;
 }
 
 .promo-label {
-    width: 80px;
-    height: 40px;
-    position: absolute;
-    background-color: red;
-    font-weight: bold;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  background-color: red;
+  font-weight: bold;
 }
 
 .promo-lokasi {
-    /* margin-top: -20px; */
-    font-size: 13px;
-    color: rgb(83, 81, 81);
+  /* margin-top: -20px; */
+  font-size: 13px;
+  color: rgb(83, 81, 81);
 }
 
 /* --------------------------- End Promo page --------------------------- */
 
-
 /* --------------------------- Destinasi page --------------------------- */
 
 .banner-destinasi {
-    height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(image/banner/kelingking-beach-destinasi.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(image/banner/kelingking-beach-destinasi.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* explore indonesia by region */
 
-
 .explore-image1 {
-    background-image: url(image/destinasi-populer/candi-borobudur-magelang.jpg);
+  background-image: url(image/destinasi-populer/candi-borobudur-magelang.jpg);
 }
 
 .explore-image2 {
-    background-image: url(image/destinasi-populer/destinasi/bali-region.jpg);
-
+  background-image: url(image/destinasi-populer/destinasi/bali-region.jpg);
 }
 
 .explore-image3 {
-    background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
+  background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
 }
 
 .explore-image4 {
-    background-image: url(image/destinasi-populer/destinasi/pulau-derawan.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pulau-derawan.jpg);
 }
 
 .explore-image5 {
-    background-image: url(image/destinasi-populer/destinasi/bunaken.jpg);
+  background-image: url(image/destinasi-populer/destinasi/bunaken.jpg);
 }
 
 .explore-image6 {
-    background-image: url(image/destinasi-populer/destinasi/danau-toba.jpg);
+  background-image: url(image/destinasi-populer/destinasi/danau-toba.jpg);
 }
-
 
 /* destinasi populer */
 
 .destinasi-page-image {
-    height: 50vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    transition: 0.5s;
-    flex-direction: column;
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: 0.5s;
+  flex-direction: column;
 }
 
 .destinasi-image-1 {
-    background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
+  background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
 }
 
 .destinasi-image-5 {
-    background-image: url(image/destinasi-populer/diamond-beach-nusapenida.jpg);
+  background-image: url(image/destinasi-populer/diamond-beach-nusapenida.jpg);
 }
 
 .destinasi-image6 {
-    background-image: url(image/destinasi-populer/destinasi/pulau-weh.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pulau-weh.jpg);
 }
-
 
 /* destinasi jawa */
 .banner-destinasi-jawa {
-    height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(image/banner/kawah-ijen.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(image/banner/kawah-ijen.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .destinasi-jawa-1 {
-    background-image: url(image/destinasi-populer/destinasi/gunung-prau.jpg);
+  background-image: url(image/destinasi-populer/destinasi/gunung-prau.jpg);
 }
 
 .destinasi-jawa-2 {
-    background-image: url(image/destinasi-populer/destinasi/candi-borobudur-magelang.jpg);
+  background-image: url(image/destinasi-populer/destinasi/candi-borobudur-magelang.jpg);
 }
 
 .destinasi-jawa-3 {
-    background-image: url(image/destinasi-populer/destinasi/gunung-bromo-jatim.jpg);
+  background-image: url(image/destinasi-populer/destinasi/gunung-bromo-jatim.jpg);
 }
 
 .destinasi-jawa-4 {
-    background-image: url(image/destinasi-populer/destinasi/taman-nasional-baluran.jpg);
+  background-image: url(image/destinasi-populer/destinasi/taman-nasional-baluran.jpg);
 }
 
 .destinasi-jawa-5 {
-    background-image: url(image/destinasi-populer/destinasi/sikunir-jateng.jpg);
+  background-image: url(image/destinasi-populer/destinasi/sikunir-jateng.jpg);
 }
 
 .destinasi-jawa-6 {
-    background-image: url(image/destinasi-populer/destinasi/kawah-ijen-jatim.jpg);
+  background-image: url(image/destinasi-populer/destinasi/kawah-ijen-jatim.jpg);
 }
 
 /* destinasi bali-nusa tenggara */
 .banner-destinasi-bali {
-    height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(image/banner/Kelimutu-volcano.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(image/banner/Kelimutu-volcano.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .destinasi-bali-1 {
-    background-image: url(image/destinasi-populer/diamond-beach-nusapenida.jpg);
+  background-image: url(image/destinasi-populer/diamond-beach-nusapenida.jpg);
 }
 
 .destinasi-bali-2 {
-    background-image: url(image/destinasi-populer/Kelimutu-volcano.jpg);
+  background-image: url(image/destinasi-populer/Kelimutu-volcano.jpg);
 }
 
 .destinasi-bali-3 {
-    background-image: url(image/destinasi-populer/destinasi/Pantai-Kelingking-NusaPenida.jpg);
+  background-image: url(image/destinasi-populer/destinasi/Pantai-Kelingking-NusaPenida.jpg);
 }
 
 .destinasi-bali-4 {
-
-    background-image: url(image/destinasi-populer/pulau-padar.jpg);
+  background-image: url(image/destinasi-populer/pulau-padar.jpg);
 }
 
 .destinasi-bali-5 {
-    background-image: url(image/destinasi-populer/destinasi/gunung-rinjani.jpg);
+  background-image: url(image/destinasi-populer/destinasi/gunung-rinjani.jpg);
 }
 
 .destinasi-bali-6 {
-    background-image: url(image/destinasi-populer/destinasi/pantai-pink.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pantai-pink.jpg);
 }
 
 /* destinasi maluku-papua */
 .banner-destinasi-papua {
-    height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(image/banner/raja-ampat-papuabarat.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(image/banner/raja-ampat-papuabarat.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .destinasi-papua-1 {
-    background-image: url(image/destinasi-populer/destinasi/danau-sentani.jpg);
+  background-image: url(image/destinasi-populer/destinasi/danau-sentani.jpg);
 }
 
 .destinasi-papua-2 {
-    background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
+  background-image: url(image/destinasi-populer/raja-ampat-papuabarat.jpg);
 }
 
 .destinasi-papua-3 {
-    background-image: url(image/destinasi-populer/destinasi/teluk-cendrawasih-papua.jpg);
+  background-image: url(image/destinasi-populer/destinasi/teluk-cendrawasih-papua.jpg);
 }
 
 .destinasi-papua-4 {
-    background-image: url(image/destinasi-populer/destinasi/pantai-baseG-papua.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pantai-baseG-papua.jpg);
 }
 
 .destinasi-papua-5 {
-    background-image: url(image/destinasi-populer/destinasi/pulau-pombo-maluku.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pulau-pombo-maluku.jpg);
 }
 
 .destinasi-papua-6 {
-    background-image: url(image/destinasi-populer/destinasi/pantai-bosnik-papua.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pantai-bosnik-papua.jpg);
 }
 
 /* destinasi kalimantan */
 .banner-destinasi-kalimantan {
-    height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(image/banner/pulau-derawan.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(image/banner/pulau-derawan.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .destinasi-kalimantan-1 {
-    background-image: url(image/destinasi-populer/destinasi/pulau-derawan.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pulau-derawan.jpg);
 }
 
 .destinasi-kalimantan-2 {
-    background-image: url(image/destinasi-populer/destinasi/pasar-terapung-Lok-Baintan.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pasar-terapung-Lok-Baintan.jpg);
 }
 
 .destinasi-kalimantan-3 {
-    background-image: url(image/destinasi-populer/destinasi/danau-labuan-cermin1.jpg);
+  background-image: url(image/destinasi-populer/destinasi/danau-labuan-cermin1.jpg);
 }
 
 .destinasi-kalimantan-4 {
-    background-image: url(image/destinasi-populer/destinasi/bukit-kelam-kalbar.jpg);
+  background-image: url(image/destinasi-populer/destinasi/bukit-kelam-kalbar.jpg);
 }
 
 .destinasi-kalimantan-5 {
-    background-image: url(image/destinasi-populer/destinasi/bukit-rimpi-kalimantan.jpg);
+  background-image: url(image/destinasi-populer/destinasi/bukit-rimpi-kalimantan.jpg);
 }
 
 .destinasi-kalimantan-6 {
-    background-image: url(image/destinasi-populer/destinasi/pantai-melawi-kalimantan.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pantai-melawi-kalimantan.jpg);
 }
 
 /* destinasi sulawesi */
 .banner-destinasi-sulawesi {
-    height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(image/banner/pantai-tanjungBira-sulawesi1.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(image/banner/pantai-tanjungBira-sulawesi1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .destinasi-sulawesi-1 {
-    background-image: url(image/destinasi-populer/destinasi/bunaken.jpg);
+  background-image: url(image/destinasi-populer/destinasi/bunaken.jpg);
 }
 
 .destinasi-sulawesi-2 {
-    background-image: url(image/destinasi-populer/destinasi/wakatobi-sulawesi.jpg);
+  background-image: url(image/destinasi-populer/destinasi/wakatobi-sulawesi.jpg);
 }
 
 .destinasi-sulawesi-3 {
-    background-image: url(image/destinasi-populer/destinasi/tana-toraja-sulawesi.jpg);
+  background-image: url(image/destinasi-populer/destinasi/tana-toraja-sulawesi.jpg);
 }
 
 .destinasi-sulawesi-4 {
-    background-image: url(image/destinasi-populer/destinasi/taka-bonerate-sulawesi.jpg);
+  background-image: url(image/destinasi-populer/destinasi/taka-bonerate-sulawesi.jpg);
 }
 
 .destinasi-sulawesi-5 {
-    background-image: url(image/destinasi-populer/destinasi/pulau-togean-sulawesi.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pulau-togean-sulawesi.jpg);
 }
 
 .destinasi-sulawesi-6 {
-    background-image: url(image/destinasi-populer/destinasi/pantai-tanjungBira-sulawesi.jpg);
+  background-image: url(image/destinasi-populer/destinasi/pantai-tanjungBira-sulawesi.jpg);
 }
 
 /* destinasi sumatera */
 .banner-destinasi-sumatera {
-    height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(image/banner/Bukit-Khayangan-jambi.jpg);
-    background-size: cover;
-    background-position: center;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(image/banner/Bukit-Khayangan-jambi.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .destinasi-sumatera-1 {
-    background-image: url(image/destinasi-populer/destinasi/Bukit-Khayangan-jambi.jpg);
+  background-image: url(image/destinasi-populer/destinasi/Bukit-Khayangan-jambi.jpg);
 }
 
 .destinasi-sumatera-2 {
-    background-image: url(image/destinasi-populer/destinasi/Air-Terjun-sipiso-piso.jpg);
+  background-image: url(image/destinasi-populer/destinasi/Air-Terjun-sipiso-piso.jpg);
 }
 
 .destinasi-sumatera-3 {
-    background-image: url(image/destinasi-populer/destinasi/gunung-leuser.jpg);
+  background-image: url(image/destinasi-populer/destinasi/gunung-leuser.jpg);
 }
 
 .destinasi-sumatera-4 {
-    background-image: url(image/destinasi-populer/destinasi/danau-toba.jpg);
+  background-image: url(image/destinasi-populer/destinasi/danau-toba.jpg);
 }
 
 .destinasi-sumatera-5 {
-    background-image: url(image/destinasi-populer/destinasi/Pantai-Lhok-Mee.jpg);
+  background-image: url(image/destinasi-populer/destinasi/Pantai-Lhok-Mee.jpg);
 }
 
 .destinasi-sumatera-6 {
-    background-image: url(image/destinasi-populer/destinasi/Pantai-sorake-nias.jpg);
+  background-image: url(image/destinasi-populer/destinasi/Pantai-sorake-nias.jpg);
 }
 
 /* --------------------------- End of Destinasi page --------------------------- */
 
 @media (min-width: 1200px) {
+  /* -------------- home page -------------- */
+  /* kenapa kami */
+  .block-kenapa2 {
+    margin-left: 70px;
+  }
 
-    /* -------------- home page -------------- */
-    /* kenapa kami */
-    .block-kenapa2 {
-        margin-left: 70px
-    }
+  .block-kenapa3 {
+    margin-left: 420px !important;
+    margin-top: -50px !important;
+  }
 
-    .block-kenapa3 {
-        margin-left: 420px !important;
-        margin-top: -50px !important;
-    }
-
-    /* end of kenapa kami */
-    /* -------------- end of home page -------------- */
-
+  /* end of kenapa kami */
+  /* -------------- end of home page -------------- */
 }
 
 @media (min-width: 992px) {
+  /* -------------- home page -------------- */
+  /* navbar */
+  .navbar-home {
+    padding-left: 35px !important;
+  }
 
-    /* -------------- home page -------------- */
-    /* navbar */
-    .navbar-home {
-        padding-left: 35px !important;
-    }
+  .navbar-jarak {
+    margin-right: -20px !important;
+  }
 
-    .navbar-jarak {
-        margin-right: -20px !important;
-    }
+  .navbar-register {
+    margin: 0 48px;
+  }
 
-    .navbar-register {
-        margin: 0 48px;
-    }
+  /* baner */
+  .caption-banner h1 {
+    font-size: 60px !important;
+  }
 
-    /* baner */
-    .caption-banner h1 {
-        font-size: 60px !important;
-    }
+  .caption-banner p,
+  .caption-banner button {
+    font-size: 20px !important;
+  }
 
-    .caption-banner p,
-    .caption-banner button {
-        font-size: 20px !important;
-    }
+  /* kenapa kami */
+  .kenapa-kami,
+  .kenapa-kami2 {
+    margin-top: 100px;
+  }
 
-    /* kenapa kami */
-    .kenapa-kami,
-    .kenapa-kami2 {
-        margin-top: 100px;
-    }
+  .block-kenapa2 {
+    margin-left: 70px;
+  }
 
-    .block-kenapa2 {
-        margin-left: 70px
-    }
+  .block-kenapa3 {
+    margin-left: 355px;
+    margin-top: -130px;
+  }
 
-    .block-kenapa3 {
-        margin-left: 355px;
-        margin-top: -130px;
-    }
+  .content-kenapa-kami {
+    flex-direction: row !important;
+  }
 
-    .content-kenapa-kami {
-        flex-direction: row !important;
-    }
+  .kenapa1 {
+    order: 1 !important;
+  }
 
-    .kenapa1 {
-        order: 1 !important;
-    }
+  .kenapa2 {
+    order: 2 !important;
+  }
 
-    .kenapa2 {
-        order: 2 !important;
-    }
+  .kenapa3 {
+    order: 3 !important;
+  }
 
-    .kenapa3 {
-        order: 3 !important;
-    }
+  /* end of kenapa kami */
 
-    /* end of kenapa kami */
+  /* destinasi pop Up */
+  .modal-image {
+    border-radius: 7px 0 0 7px !important;
+  }
 
-    /* destinasi pop Up */
-    .modal-image {
-        border-radius: 7px 0 0 7px !important;
-    }
+  .modal-title {
+    padding-left: 23px !important;
+  }
 
-    .modal-title {
-        padding-left: 23px !important;
-    }
+  .modal-lokasi {
+    padding-left: 25px !important;
+  }
 
-    .modal-lokasi {
-        padding-left: 25px !important;
-    }
+  .modal-text {
+    padding-left: 0px !important;
+  }
 
-    .modal-text {
-        padding-left: 0PX !important;
-    }
+  .modal-button {
+    margin-top: 0px !important;
+  }
 
-    .modal-button {
-        margin-top: 0px !important;
-    }
+  /* apa kata mereka */
+  .testimoni-text {
+    padding: 0px !important;
+    padding-right: 30px !important;
+    margin-top: 0 !important;
+  }
 
-    /* apa kata mereka */
-    .testimoni-text {
-        padding: 0px !important;
-        padding-right: 30px !important;
-        margin-top: 0 !important;
-    }
+  .social {
+    padding-left: 0px !important;
+    text-align: start !important;
+  }
 
-    .social {
-        padding-left: 0px !important;
-        text-align: start !important;
+  .testimoni-block-satu {
+    border-radius: 10px 0 0 10px !important;
+  }
 
-    }
+  .testimoni-block-dua {
+    border-radius: 0 10px 10px 0 !important;
+  }
 
-    .testimoni-block-satu {
-        border-radius: 10px 0 0 10px !important;
-    }
-
-    .testimoni-block-dua {
-        border-radius: 0 10px 10px 0 !important;
-    }
-
-    /* -------------- end of home page -------------- */
+  /* -------------- end of home page -------------- */
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 @media (min-width: 576px) {
+  /* -------------- home page -------------- */
+  /* navbar */
+  .active-nav {
+    width: 80px;
+    margin-left: 30px;
+  }
 
-    /* -------------- home page -------------- */
-    /* navbar */
-    .active-nav {
-        width: 80px;
-        margin-left: 30px;
-    }
+  .navbar-responsif {
+    margin-left: 50px;
+  }
+  .nav-act {
+    margin-left: 30px;
+  }
+  .navbar-register {
+    margin-left: 38px;
+  }
 
-    .navbar-responsif {
-        margin-left: 50px;
-    }
+  /* baner */
+  .caption-banner h1 {
+    font-size: 40px;
+  }
 
-    .navbar-register {
-        margin-left: 38px;
-    }
+  .caption-banner p,
+  .caption-banner button {
+    font-size: 17px;
+  }
 
-    /* baner */
-    .caption-banner h1 {
-        font-size: 40px;
-    }
+  /* kenapa kami */
+  .content-kenapa-kami {
+    flex-direction: column;
+  }
 
-    .caption-banner p,
-    .caption-banner button {
-        font-size: 17px;
-    }
+  .kenapa1 {
+    order: 3;
+  }
 
-    /* kenapa kami */
-    .content-kenapa-kami {
-        flex-direction: column;
-    }
+  .kenapa2 {
+    order: 1;
+  }
 
-    .kenapa1 {
-        order: 3;
-    }
+  .kenapa3 {
+    order: 2;
+  }
 
-    .kenapa2 {
-        order: 1;
-    }
+  /* end of kenapa kami */
 
-    .kenapa3 {
-        order: 2;
-    }
+  /* destinasi pop Up */
+  .modal-image {
+    border-radius: 7px 7px 0 0;
+  }
 
-    /* end of kenapa kami */
+  .modal-title {
+    padding-left: 45px;
+  }
 
-    /* destinasi pop Up */
-    .modal-image {
-        border-radius: 7px 7px 0 0;
-    }
+  .modal-lokasi {
+    padding-left: 45px;
+  }
 
-    .modal-title {
-        padding-left: 45px;
-    }
+  .modal-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .modal-lokasi {
-        padding-left: 45px;
-    }
+  .modal-button {
+    margin-top: -400px;
+  }
 
-    .modal-text {
-        padding-left: 20px;
-        padding-right: 20PX;
-    }
+  /* apa kata mereka */
+  .testimoni-text {
+    margin-top: -50px;
+  }
 
-    .modal-button {
-        margin-top: -400px;
-    }
+  .social {
+    text-align: center;
+  }
 
-    /* apa kata mereka */
-    .testimoni-text {
-        margin-top: -50px;
-    }
+  .testimoni-block-satu {
+    border-radius: 10px 10px 0 0;
+  }
 
-    .social {
-        text-align: center;
-    }
+  .testimoni-block-dua {
+    border-radius: 0 0 10px 10px;
+  }
 
-    .testimoni-block-satu {
-        border-radius: 10px 10px 0 0;
-    }
-
-    .testimoni-block-dua {
-        border-radius: 0 0 10px 10px;
-    }
-
-    /* --------------end of home page -------------- */
+  /* --------------end of home page -------------- */
 }
 
 @media (max-width: 575.98px) {
+  /* -------------- home page --------------*/
+  /* navbar */
+  .active-nav {
+    width: 80px;
+    margin-left: 30px;
+  }
 
-    /* -------------- home page --------------*/
-    /* navbar */
-    .active-nav {
-        width: 80px;
-        margin-left: 30px;
-    }
+  .navbar-responsif {
+    margin-left: 50px;
+  }
+  .nav-act {
+    margin-left: 30px;
+  }
 
-    .navbar-responsif {
-        margin-left: 50px;
-    }
+  .navbar-register {
+    margin-left: 38px !important;
+  }
 
-    .navbar-register {
-        margin-left: 38px !important;
-    }
+  /* baner */
+  .caption-banner h1 {
+    font-size: 30px;
+  }
 
-    /* baner */
-    .caption-banner h1 {
-        font-size: 30px;
-    }
+  .caption-banner p,
+  .caption-banner button {
+    font-size: 15px;
+  }
 
-    .caption-banner p,
-    .caption-banner button {
-        font-size: 15px;
-    }
+  /* kenapa kami */
+  .content-kenapa-kami {
+    flex-direction: column;
+  }
 
-    /* kenapa kami */
-    .content-kenapa-kami {
-        flex-direction: column;
-    }
+  .kenapa1 {
+    order: 3;
+  }
 
-    .kenapa1 {
-        order: 3;
-    }
+  .kenapa2 {
+    order: 1;
+  }
 
-    .kenapa2 {
-        order: 1;
-    }
+  .kenapa3 {
+    order: 2;
+  }
 
-    .kenapa3 {
-        order: 2;
-    }
+  /* destinasi populer */
+  .modal-title {
+    padding: 20px 0 0 25px;
+  }
 
-    /* destinasi populer */
-    .modal-title {
-        padding: 20px 0 0 25px;
-    }
+  .modal-lokasi {
+    padding: 0 0 0 25px;
+  }
 
-    .modal-lokasi {
-        padding: 0 0 0 25px
-    }
+  /* destinasi pop up */
+  .modal-image {
+    border-radius: 7px 7px 0 0;
+  }
 
-    /* destinasi pop up */
-    .modal-image {
-        border-radius: 7px 7px 0 0;
-    }
+  /* apa kata mereka */
+  .testimoni-text {
+    padding: 0 20px;
+    margin-top: -50px;
+  }
 
-    /* apa kata mereka */
-    .testimoni-text {
-        padding: 0 20px;
-        margin-top: -50px;
-    }
+  .social {
+    text-align: center;
+  }
 
-    .social {
-        text-align: center;
-    }
+  .testimoni-block-satu {
+    border-radius: 10px 10px 0 0;
+  }
 
-    .testimoni-block-satu {
-        border-radius: 10px 10px 0 0;
-    }
+  .testimoni-block-dua {
+    border-radius: 0 0 10px 10px;
+  }
 
-    .testimoni-block-dua {
-        border-radius: 0 0 10px 10px;
-    }
+  /* hubungi kami */
+  .hubungi-kami-alamat {
+    margin-top: 20px;
+  }
 
-    /* hubungi kami */
-    .hubungi-kami-alamat {
-        margin-top: 20px;
-    }
-
-    /* --------------end of home page -------------- */
+  /* --------------end of home page -------------- */
 }
